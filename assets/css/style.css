@@ -1,6 +1,7 @@
 :root {
   --color-black: #000000;
   --color-gray: #333333;
+  --color-gray-light: #c4c4c4;
   --color-light: #efefef;
   --color-white: #ffffff;
   --color-accent: #f13c6e;
@@ -41,6 +42,20 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -215,6 +230,76 @@ a {
   font-size: 21px;
   letter-spacing: 0.05em;
   color: var(--color-black);
+}
+
+.submit {
+  margin-bottom: 100px;
+  color: var(--color-white);
+}
+
+.submit__content {
+  display: flex;
+  gap: var(--gap-lg);
+}
+.subscribe {
+  background-color: var(--color-accent);
+  flex: 1;
+  padding: 25px var(--gap-xl);
+}
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 250px;
+}
+.subscribe__title {
+  font-size: 1.125rem;
+  line-height: var(--line-height-sm);
+}
+.subscribe__descriptipn {
+  font-size: 0.875rem;
+  line-height: var(--line-height-lg);
+}
+.subscribe__form {
+  max-width: 225px;
+}
+.subscribe__input {
+  font-size: 0.875rem;
+  padding: 0.25em 25px;
+  display: block;
+  width: 100%;
+  min-height: 35px;
+  background-color: var(--color-light);
+  border: none;
+  border-radius: 30px;
+}
+.subscribe__input::placeholder {
+  color: #c4c4c4;
+}
+
+.our-shops {
+  background-color: var(--color-accent);
+  flex: 1;
+  padding: 25px var(--gap-xl);
+}
+.our-shops__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 250px;
+}
+.our-shops__title {
+  font-size: 1.125rem;
+  line-height: var(--line-height-sm);
+}
+.our-shops__description {
+  font-size: 0.875rem;
+  line-height: var(--line-height-lg);
+}
+.our-shops__actions {
+}
+.our-shops__buttons {
+  min-height: 35px;
 }
 
 @media (max-width: 1400px) {
