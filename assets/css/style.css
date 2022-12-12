@@ -210,15 +210,11 @@ a {
 .offer-item__picture {
   order: -1;
 }
-.offer-item__image {
-}
 .offer-item__price {
   font-weight: 500;
   font-size: 21px;
   letter-spacing: 0.05em;
   color: var(--color-black);
-}
-.offer-item__button {
 }
 
 @media (max-width: 1400px) {
