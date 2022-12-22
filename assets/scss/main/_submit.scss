@@ -1,0 +1,13 @@
+@use "../presets" as *;
+
+.submit {
+  margin-bottom: 100px;
+
+  color: $color-white;
+
+  &__content {
+    display: flex;
+
+    gap: $gap-lg;
+  }
+}

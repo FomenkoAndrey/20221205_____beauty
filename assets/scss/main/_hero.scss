@@ -1,0 +1,13 @@
+@use "../presets" as *;
+
+.hero {
+  margin-bottom: 80px;
+  padding: 192px 0;
+
+  color: $color-white;
+  background-color: $color-accent;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}

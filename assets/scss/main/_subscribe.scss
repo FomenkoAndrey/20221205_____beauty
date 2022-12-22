@@ -1,0 +1,53 @@
+@use "../presets" as *;
+
+.subscribe {
+  flex: 1;
+
+  padding: 25px $gap-xl;
+
+  background-color: $color-accent;
+  background-image: url(../img/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 250px;
+
+    gap: 25px;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    line-height: $line-height-sm;
+  }
+
+  &__form {
+    max-width: 225px;
+  }
+
+  &__descriptipn {
+    font-size: 0.875rem;
+    line-height: $line-height-lg;
+  }
+
+  &__input {
+    display: block;
+
+    width: 100%;
+    min-height: 35px;
+    padding: 0.25em 25px;
+
+    border: none;
+    border-radius: 30px;
+    background-color: $color-light;
+
+    font-size: 0.875rem;
+
+    &::placeholder {
+      color: #c4c4c4;
+    }
+  }
+}

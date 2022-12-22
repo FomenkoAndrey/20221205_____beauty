@@ -1,0 +1,25 @@
+@use "../presets" as *;
+
+.navbar-secondary {
+  display: flex;
+  align-items: center;
+  order: -1;
+
+  min-height: 50px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    list-style: none;
+
+    gap: 0 $gap-xs;
+  }
+
+  &__link {
+    display: block;
+
+    padding: 7px $gap-xs;
+  }
+}

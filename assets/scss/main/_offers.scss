@@ -1,0 +1,54 @@
+@use "../presets" as *;
+
+.offers {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: $gap-xl;
+
+    font-size: 1.5rem;
+    line-height: $line-height-sm;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: $gap-lg;
+  }
+}
+
+.offer-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px;
+
+  text-align: center;
+
+  background-color: $color-white;
+
+  gap: $gap;
+
+  &__title {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: $line-height-lg;
+  }
+
+  &__picture {
+    order: -1;
+  }
+
+  &__price {
+    letter-spacing: 0.05em;
+
+    color: $color-black;
+
+    font-size: 21px;
+    font-weight: 500;
+  }
+}

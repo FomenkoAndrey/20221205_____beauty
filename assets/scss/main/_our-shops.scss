@@ -1,0 +1,35 @@
+@use "../presets" as *;
+
+.our-shops {
+  flex: 1;
+
+  padding: 25px $gap-xl;
+
+  background-color: $color-accent;
+  background-image: url(../img/car.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 250px;
+
+    gap: 25px;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    line-height: $line-height-sm;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    line-height: $line-height-lg;
+  }
+
+  &__buttons {
+    min-height: 35px;
+  }
+}

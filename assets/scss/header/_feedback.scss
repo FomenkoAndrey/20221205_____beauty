@@ -1,0 +1,14 @@
+@use "../presets" as *;
+
+.feedback {
+  display: flex;
+  align-items: center;
+
+  gap: $gap-xs $gap-xl;
+
+  &__phone {
+    color: $color-black;
+
+    font-size: 1rem;
+  }
+}

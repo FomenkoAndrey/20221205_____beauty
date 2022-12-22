@@ -1,0 +1,28 @@
+@use "../presets" as *;
+
+.navbar-primary {
+  display: flex;
+  align-items: center;
+
+  min-height: 80px;
+
+  background-color: $color-white;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    list-style: none;
+
+    gap: 0 $gap;
+  }
+
+  &__link {
+    display: block;
+
+    padding: 7px $gap-xs;
+
+    font-size: 1rem;
+  }
+}

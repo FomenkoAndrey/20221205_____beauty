@@ -1,0 +1,27 @@
+@use "../presets" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+body {
+  color: $color-gray;
+  background-color: $color-light;
+
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
