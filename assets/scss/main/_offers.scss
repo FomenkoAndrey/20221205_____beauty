@@ -1,9 +1,10 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .offers {
   margin-bottom: 100px;
 
-  @media (max-width: 576px) {
+  @include sm {
     text-align: center;
   }
 
@@ -25,7 +26,8 @@
 .offer-item {
   display: flex;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
   flex-direction: column;
   justify-content: space-between;
 
@@ -37,11 +39,15 @@
 
   gap: $gap;
 
-  @media (max-width: 992px) {
+  @include lg-min {
+    flex-basis: 0;
+  }
+
+  @include lg-md {
     flex-basis: 33%;
   }
 
-  @media (max-width: 768px) {
+  @include md {
     flex-basis: 100%;
   }
 

@@ -1,4 +1,5 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .hero {
   margin-bottom: 80px;
@@ -6,27 +7,27 @@
   color: $color-white;
   background-color: $color-accent;
 
-  @media (min-width: 1400px) {
+  @include ul-min {
     background-size: contain;
   }
 
-  @media (max-width: 1399.8px) {
+  @include ul {
     background-size: cover;
   }
 
-  @media (min-width: 992px) {
+  @include lg-min {
     padding: 192px 0;
   }
 
-  @media (max-width: 991.8px) and (min-width: 768px) {
+  @include lg-md {
     padding: 120px 0;
   }
 
-  @media (max-width: 767.8px) {
+  @include md {
     padding: 80px 0;
   }
 
-  @media (min-width: 576px) {
+  @include sm-min {
     background-image: url(../img/Rectangle.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -39,7 +40,7 @@
     align-items: flex-start;
     max-width: 375px;
 
-    @media (max-width: 576px) {
+    @include sm {
       align-items: center;
       max-width: 100%;
       text-align: center;
