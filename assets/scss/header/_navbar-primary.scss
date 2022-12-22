@@ -24,5 +24,9 @@
     padding: 7px $gap-xs;
 
     font-size: 1rem;
+
+    @media (max-width: 576px) {
+      padding: 5px;
+    }
   }
 }

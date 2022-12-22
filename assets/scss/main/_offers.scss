@@ -3,6 +3,10 @@
 .offers {
   margin-bottom: 100px;
 
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+
   &__title {
     margin-bottom: $gap-xl;
 
@@ -32,6 +36,14 @@
   background-color: $color-white;
 
   gap: $gap;
+
+  @media (max-width: 992px) {
+    flex-basis: 33%;
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
 
   &__title {
     font-size: 0.875rem;

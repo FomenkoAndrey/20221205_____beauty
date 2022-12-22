@@ -6,6 +6,10 @@
 
   gap: $gap-xs $gap-xl;
 
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+
   &__phone {
     color: $color-black;
 

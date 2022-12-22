@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
   background-position: calc(100% - 45px) 50%;
 
+  @media (max-width: 992px) {
+    background-image: none;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,10 @@
     max-width: 250px;
 
     gap: 25px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
   }
 
   &__title {

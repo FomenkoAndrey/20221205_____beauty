@@ -12,5 +12,9 @@
     justify-content: space-between;
 
     gap: $gap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }
